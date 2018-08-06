@@ -33,10 +33,12 @@
             this.label7 = new System.Windows.Forms.Label();
             this.txtpajak = new System.Windows.Forms.TextBox();
             this.txtharga = new System.Windows.Forms.TextBox();
+            this.txtjumlah = new System.Windows.Forms.TextBox();
             this.txtnama = new System.Windows.Forms.TextBox();
             this.txtkode = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -52,26 +54,24 @@
             this.btnbatal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnbatal.Font = new System.Drawing.Font("Maiandra GD", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnbatal.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnbatal.Location = new System.Drawing.Point(442, 521);
+            this.btnbatal.Location = new System.Drawing.Point(393, 642);
             this.btnbatal.Name = "btnbatal";
             this.btnbatal.Size = new System.Drawing.Size(128, 48);
             this.btnbatal.TabIndex = 102;
             this.btnbatal.Text = "BATAL";
             this.btnbatal.UseVisualStyleBackColor = false;
-            this.btnbatal.Click += new System.EventHandler(this.btnbatal_Click);
             // 
             // btnsimpan
             // 
             this.btnsimpan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnsimpan.Font = new System.Drawing.Font("Maiandra GD", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnsimpan.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnsimpan.Location = new System.Drawing.Point(217, 521);
+            this.btnsimpan.Location = new System.Drawing.Point(198, 642);
             this.btnsimpan.Name = "btnsimpan";
             this.btnsimpan.Size = new System.Drawing.Size(128, 48);
             this.btnsimpan.TabIndex = 101;
             this.btnsimpan.Text = "SIMPAN";
             this.btnsimpan.UseVisualStyleBackColor = false;
-            this.btnsimpan.Click += new System.EventHandler(this.btnsimpan_Click);
             // 
             // label7
             // 
@@ -79,7 +79,7 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label7.Location = new System.Drawing.Point(450, 431);
+            this.label7.Location = new System.Drawing.Point(414, 533);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(42, 36);
             this.label7.TabIndex = 100;
@@ -87,27 +87,31 @@
             // 
             // txtpajak
             // 
-            this.txtpajak.Location = new System.Drawing.Point(369, 431);
+            this.txtpajak.Location = new System.Drawing.Point(322, 533);
             this.txtpajak.Multiline = true;
             this.txtpajak.Name = "txtpajak";
             this.txtpajak.Size = new System.Drawing.Size(75, 35);
             this.txtpajak.TabIndex = 99;
-            this.txtpajak.TextChanged += new System.EventHandler(this.txtpajak_TextChanged);
-            this.txtpajak.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtpajak_KeyPress);
             // 
             // txtharga
             // 
-            this.txtharga.Location = new System.Drawing.Point(369, 370);
+            this.txtharga.Location = new System.Drawing.Point(322, 475);
             this.txtharga.Multiline = true;
             this.txtharga.Name = "txtharga";
             this.txtharga.Size = new System.Drawing.Size(188, 35);
             this.txtharga.TabIndex = 98;
-            this.txtharga.TextChanged += new System.EventHandler(this.txtharga_TextChanged);
-            this.txtharga.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtharga_KeyPress);
+            // 
+            // txtjumlah
+            // 
+            this.txtjumlah.Location = new System.Drawing.Point(322, 413);
+            this.txtjumlah.Multiline = true;
+            this.txtjumlah.Name = "txtjumlah";
+            this.txtjumlah.Size = new System.Drawing.Size(75, 35);
+            this.txtjumlah.TabIndex = 97;
             // 
             // txtnama
             // 
-            this.txtnama.Location = new System.Drawing.Point(369, 242);
+            this.txtnama.Location = new System.Drawing.Point(322, 356);
             this.txtnama.Multiline = true;
             this.txtnama.Name = "txtnama";
             this.txtnama.Size = new System.Drawing.Size(290, 35);
@@ -115,13 +119,12 @@
             // 
             // txtkode
             // 
-            this.txtkode.Location = new System.Drawing.Point(369, 183);
+            this.txtkode.Location = new System.Drawing.Point(322, 298);
             this.txtkode.Multiline = true;
             this.txtkode.Name = "txtkode";
+            this.txtkode.ReadOnly = true;
             this.txtkode.Size = new System.Drawing.Size(212, 35);
             this.txtkode.TabIndex = 95;
-            this.txtkode.TextChanged += new System.EventHandler(this.txtkode_TextChanged);
-            this.txtkode.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtkode_KeyPress);
             // 
             // label6
             // 
@@ -129,7 +132,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label6.Location = new System.Drawing.Point(119, 431);
+            this.label6.Location = new System.Drawing.Point(83, 533);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(112, 36);
             this.label6.TabIndex = 94;
@@ -141,11 +144,23 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label5.Location = new System.Drawing.Point(119, 370);
+            this.label5.Location = new System.Drawing.Point(83, 475);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(123, 36);
             this.label5.TabIndex = 93;
             this.label5.Text = "HARGA";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label4.Location = new System.Drawing.Point(83, 413);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(136, 36);
+            this.label4.TabIndex = 92;
+            this.label4.Text = "JUMLAH";
             // 
             // label3
             // 
@@ -153,7 +168,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label3.Location = new System.Drawing.Point(119, 242);
+            this.label3.Location = new System.Drawing.Point(83, 356);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(241, 36);
             this.label3.TabIndex = 91;
@@ -165,7 +180,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label2.Location = new System.Drawing.Point(119, 183);
+            this.label2.Location = new System.Drawing.Point(83, 298);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(98, 36);
             this.label2.TabIndex = 90;
@@ -177,7 +192,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Forte", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label1.Location = new System.Drawing.Point(99, 94);
+            this.label1.Location = new System.Drawing.Point(73, 218);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(526, 32);
             this.label1.TabIndex = 88;
@@ -189,7 +204,7 @@
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Lucida Handwriting", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.label10.Location = new System.Drawing.Point(284, 10);
+            this.label10.Location = new System.Drawing.Point(226, 138);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(341, 23);
             this.label10.TabIndex = 87;
@@ -200,7 +215,7 @@
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.pictureBox2.Image = global::Pembelanjaan.Properties.Resources.smiley_PNG189;
-            this.pictureBox2.Location = new System.Drawing.Point(631, 78);
+            this.pictureBox2.Location = new System.Drawing.Point(568, 202);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(71, 48);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -211,7 +226,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::Pembelanjaan.Properties.Resources.logo_pocket_shop;
-            this.pictureBox1.Location = new System.Drawing.Point(125, -118);
+            this.pictureBox1.Location = new System.Drawing.Point(79, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(542, 168);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -223,16 +238,18 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Pembelanjaan.Properties.Resources.white_lights_backgroundfree_christmas_light_background_from_depositphotoscom_10steps_xybsnuqs;
-            this.ClientSize = new System.Drawing.Size(800, 650);
+            this.ClientSize = new System.Drawing.Size(710, 717);
             this.Controls.Add(this.btnbatal);
             this.Controls.Add(this.btnsimpan);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtpajak);
             this.Controls.Add(this.txtharga);
+            this.Controls.Add(this.txtjumlah);
             this.Controls.Add(this.txtnama);
             this.Controls.Add(this.txtkode);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox2);
@@ -255,10 +272,12 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtpajak;
         private System.Windows.Forms.TextBox txtharga;
+        private System.Windows.Forms.TextBox txtjumlah;
         private System.Windows.Forms.TextBox txtnama;
         private System.Windows.Forms.TextBox txtkode;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox2;
