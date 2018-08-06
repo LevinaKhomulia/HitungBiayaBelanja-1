@@ -1,0 +1,13 @@
+D:\#UPH Medan\Semester 3\HitungBiayaBelanja-1\Pembelanjaan\Pembelanjaan\bin\Debug\Pembelanjaan.exe.config
+D:\#UPH Medan\Semester 3\HitungBiayaBelanja-1\Pembelanjaan\Pembelanjaan\bin\Debug\Pembelanjaan.exe
+D:\#UPH Medan\Semester 3\HitungBiayaBelanja-1\Pembelanjaan\Pembelanjaan\bin\Debug\Pembelanjaan.pdb
+D:\#UPH Medan\Semester 3\HitungBiayaBelanja-1\Pembelanjaan\Pembelanjaan\obj\Debug\Pembelanjaan.csprojAssemblyReference.cache
+D:\#UPH Medan\Semester 3\HitungBiayaBelanja-1\Pembelanjaan\Pembelanjaan\obj\Debug\Pembelanjaan.FormHitung.resources
+D:\#UPH Medan\Semester 3\HitungBiayaBelanja-1\Pembelanjaan\Pembelanjaan\obj\Debug\Pembelanjaan.FormMainMenu.resources
+D:\#UPH Medan\Semester 3\HitungBiayaBelanja-1\Pembelanjaan\Pembelanjaan\obj\Debug\Pembelanjaan.FormTambah.resources
+D:\#UPH Medan\Semester 3\HitungBiayaBelanja-1\Pembelanjaan\Pembelanjaan\obj\Debug\Pembelanjaan.FrmEdit.resources
+D:\#UPH Medan\Semester 3\HitungBiayaBelanja-1\Pembelanjaan\Pembelanjaan\obj\Debug\Pembelanjaan.Properties.Resources.resources
+D:\#UPH Medan\Semester 3\HitungBiayaBelanja-1\Pembelanjaan\Pembelanjaan\obj\Debug\Pembelanjaan.csproj.GenerateResource.cache
+D:\#UPH Medan\Semester 3\HitungBiayaBelanja-1\Pembelanjaan\Pembelanjaan\obj\Debug\Pembelanjaan.csproj.CoreCompileInputs.cache
+D:\#UPH Medan\Semester 3\HitungBiayaBelanja-1\Pembelanjaan\Pembelanjaan\obj\Debug\Pembelanjaan.exe
+D:\#UPH Medan\Semester 3\HitungBiayaBelanja-1\Pembelanjaan\Pembelanjaan\obj\Debug\Pembelanjaan.pdb

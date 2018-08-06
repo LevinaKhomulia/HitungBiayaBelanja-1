@@ -33,12 +33,10 @@
             this.label7 = new System.Windows.Forms.Label();
             this.txtpajak = new System.Windows.Forms.TextBox();
             this.txtharga = new System.Windows.Forms.TextBox();
-            this.txtjumlah = new System.Windows.Forms.TextBox();
             this.txtnama = new System.Windows.Forms.TextBox();
             this.txtkode = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -60,6 +58,7 @@
             this.btnbatal.TabIndex = 102;
             this.btnbatal.Text = "BATAL";
             this.btnbatal.UseVisualStyleBackColor = false;
+            this.btnbatal.Click += new System.EventHandler(this.btnbatal_Click);
             // 
             // btnsimpan
             // 
@@ -72,16 +71,17 @@
             this.btnsimpan.TabIndex = 101;
             this.btnsimpan.Text = "SIMPAN";
             this.btnsimpan.UseVisualStyleBackColor = false;
+            this.btnsimpan.Click += new System.EventHandler(this.btnsimpan_Click);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Exotc350 Bd BT", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label7.Location = new System.Drawing.Point(450, 431);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(39, 35);
+            this.label7.Size = new System.Drawing.Size(42, 36);
             this.label7.TabIndex = 100;
             this.label7.Text = "%";
             // 
@@ -100,14 +100,6 @@
             this.txtharga.Name = "txtharga";
             this.txtharga.Size = new System.Drawing.Size(188, 35);
             this.txtharga.TabIndex = 98;
-            // 
-            // txtjumlah
-            // 
-            this.txtjumlah.Location = new System.Drawing.Point(369, 306);
-            this.txtjumlah.Multiline = true;
-            this.txtjumlah.Name = "txtjumlah";
-            this.txtjumlah.Size = new System.Drawing.Size(75, 35);
-            this.txtjumlah.TabIndex = 97;
             // 
             // txtnama
             // 
@@ -130,11 +122,11 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Exotc350 Bd BT", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label6.Location = new System.Drawing.Point(119, 431);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(102, 35);
+            this.label6.Size = new System.Drawing.Size(112, 36);
             this.label6.TabIndex = 94;
             this.label6.Text = "PAJAK";
             // 
@@ -142,35 +134,23 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Exotc350 Bd BT", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label5.Location = new System.Drawing.Point(119, 370);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(117, 35);
+            this.label5.Size = new System.Drawing.Size(123, 36);
             this.label5.TabIndex = 93;
             this.label5.Text = "HARGA";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Exotc350 Bd BT", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label4.Location = new System.Drawing.Point(119, 306);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(128, 35);
-            this.label4.TabIndex = 92;
-            this.label4.Text = "JUMLAH";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Exotc350 Bd BT", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label3.Location = new System.Drawing.Point(119, 242);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(226, 35);
+            this.label3.Size = new System.Drawing.Size(241, 36);
             this.label3.TabIndex = 91;
             this.label3.Text = "NAMA BARANG";
             // 
@@ -178,11 +158,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Exotc350 Bd BT", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label2.Location = new System.Drawing.Point(119, 183);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(95, 35);
+            this.label2.Size = new System.Drawing.Size(98, 36);
             this.label2.TabIndex = 90;
             this.label2.Text = "KODE";
             // 
@@ -243,12 +223,10 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtpajak);
             this.Controls.Add(this.txtharga);
-            this.Controls.Add(this.txtjumlah);
             this.Controls.Add(this.txtnama);
             this.Controls.Add(this.txtkode);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox2);
@@ -257,6 +235,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "FrmEdit";
             this.Text = "FrmEdit";
+            this.Load += new System.EventHandler(this.FrmEdit_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -271,12 +250,10 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtpajak;
         private System.Windows.Forms.TextBox txtharga;
-        private System.Windows.Forms.TextBox txtjumlah;
         private System.Windows.Forms.TextBox txtnama;
         private System.Windows.Forms.TextBox txtkode;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox2;
