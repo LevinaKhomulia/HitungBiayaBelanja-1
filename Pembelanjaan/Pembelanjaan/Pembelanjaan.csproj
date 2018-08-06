@@ -65,14 +65,17 @@
     <Compile Include="FormTambah.Designer.cs">
       <DependentUpon>FormTambah.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmEdit.cs">
+    <Compile Include="FormEdit.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmEdit.Designer.cs">
-      <DependentUpon>FrmEdit.cs</DependentUpon>
+      <DependentUpon>FormEdit.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormEdit.resx">
+      <DependentUpon>FormEdit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormHitung.resx">
       <DependentUpon>FormHitung.cs</DependentUpon>
     </EmbeddedResource>
@@ -83,7 +86,7 @@
       <DependentUpon>FormTambah.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmEdit.resx">
-      <DependentUpon>FrmEdit.cs</DependentUpon>
+      <DependentUpon>FormEdit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -54,7 +54,7 @@
             this.btnbatal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnbatal.Font = new System.Drawing.Font("Maiandra GD", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnbatal.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnbatal.Location = new System.Drawing.Point(442, 521);
+            this.btnbatal.Location = new System.Drawing.Point(372, 651);
             this.btnbatal.Name = "btnbatal";
             this.btnbatal.Size = new System.Drawing.Size(128, 48);
             this.btnbatal.TabIndex = 102;
@@ -66,7 +66,7 @@
             this.btnsimpan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnsimpan.Font = new System.Drawing.Font("Maiandra GD", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnsimpan.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnsimpan.Location = new System.Drawing.Point(217, 521);
+            this.btnsimpan.Location = new System.Drawing.Point(147, 651);
             this.btnsimpan.Name = "btnsimpan";
             this.btnsimpan.Size = new System.Drawing.Size(128, 48);
             this.btnsimpan.TabIndex = 101;
@@ -77,17 +77,17 @@
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Exotc350 Bd BT", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label7.Location = new System.Drawing.Point(450, 431);
+            this.label7.Location = new System.Drawing.Point(380, 561);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(39, 35);
+            this.label7.Size = new System.Drawing.Size(42, 36);
             this.label7.TabIndex = 100;
             this.label7.Text = "%";
             // 
             // txtpajak
             // 
-            this.txtpajak.Location = new System.Drawing.Point(369, 431);
+            this.txtpajak.Location = new System.Drawing.Point(299, 561);
             this.txtpajak.Multiline = true;
             this.txtpajak.Name = "txtpajak";
             this.txtpajak.Size = new System.Drawing.Size(75, 35);
@@ -95,7 +95,7 @@
             // 
             // txtharga
             // 
-            this.txtharga.Location = new System.Drawing.Point(369, 370);
+            this.txtharga.Location = new System.Drawing.Point(299, 500);
             this.txtharga.Multiline = true;
             this.txtharga.Name = "txtharga";
             this.txtharga.Size = new System.Drawing.Size(188, 35);
@@ -103,7 +103,7 @@
             // 
             // txtjumlah
             // 
-            this.txtjumlah.Location = new System.Drawing.Point(369, 306);
+            this.txtjumlah.Location = new System.Drawing.Point(299, 436);
             this.txtjumlah.Multiline = true;
             this.txtjumlah.Name = "txtjumlah";
             this.txtjumlah.Size = new System.Drawing.Size(75, 35);
@@ -111,7 +111,7 @@
             // 
             // txtnama
             // 
-            this.txtnama.Location = new System.Drawing.Point(369, 242);
+            this.txtnama.Location = new System.Drawing.Point(299, 372);
             this.txtnama.Multiline = true;
             this.txtnama.Name = "txtnama";
             this.txtnama.Size = new System.Drawing.Size(290, 35);
@@ -119,7 +119,7 @@
             // 
             // txtkode
             // 
-            this.txtkode.Location = new System.Drawing.Point(369, 183);
+            this.txtkode.Location = new System.Drawing.Point(299, 313);
             this.txtkode.Multiline = true;
             this.txtkode.Name = "txtkode";
             this.txtkode.ReadOnly = true;
@@ -130,11 +130,11 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Exotc350 Bd BT", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label6.Location = new System.Drawing.Point(119, 431);
+            this.label6.Location = new System.Drawing.Point(49, 561);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(102, 35);
+            this.label6.Size = new System.Drawing.Size(112, 36);
             this.label6.TabIndex = 94;
             this.label6.Text = "PAJAK";
             // 
@@ -142,11 +142,11 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Exotc350 Bd BT", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label5.Location = new System.Drawing.Point(119, 370);
+            this.label5.Location = new System.Drawing.Point(49, 500);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(117, 35);
+            this.label5.Size = new System.Drawing.Size(123, 36);
             this.label5.TabIndex = 93;
             this.label5.Text = "HARGA";
             // 
@@ -154,11 +154,11 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Exotc350 Bd BT", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label4.Location = new System.Drawing.Point(119, 306);
+            this.label4.Location = new System.Drawing.Point(49, 436);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(128, 35);
+            this.label4.Size = new System.Drawing.Size(136, 36);
             this.label4.TabIndex = 92;
             this.label4.Text = "JUMLAH";
             // 
@@ -166,11 +166,11 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Exotc350 Bd BT", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label3.Location = new System.Drawing.Point(119, 242);
+            this.label3.Location = new System.Drawing.Point(49, 372);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(226, 35);
+            this.label3.Size = new System.Drawing.Size(241, 36);
             this.label3.TabIndex = 91;
             this.label3.Text = "NAMA BARANG";
             // 
@@ -178,11 +178,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Exotc350 Bd BT", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label2.Location = new System.Drawing.Point(119, 183);
+            this.label2.Location = new System.Drawing.Point(49, 313);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(95, 35);
+            this.label2.Size = new System.Drawing.Size(98, 36);
             this.label2.TabIndex = 90;
             this.label2.Text = "KODE";
             // 
@@ -190,7 +190,7 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = global::Pembelanjaan.Properties.Resources.smiley_PNG189;
-            this.pictureBox2.Location = new System.Drawing.Point(631, 78);
+            this.pictureBox2.Location = new System.Drawing.Point(561, 208);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(71, 48);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -203,7 +203,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Forte", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label1.Location = new System.Drawing.Point(99, 94);
+            this.label1.Location = new System.Drawing.Point(29, 224);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(526, 32);
             this.label1.TabIndex = 88;
@@ -215,7 +215,7 @@
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Lucida Handwriting", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.label10.Location = new System.Drawing.Point(284, 10);
+            this.label10.Location = new System.Drawing.Point(214, 140);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(341, 23);
             this.label10.TabIndex = 87;
@@ -225,7 +225,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::Pembelanjaan.Properties.Resources.logo_pocket_shop;
-            this.pictureBox1.Location = new System.Drawing.Point(15, -77);
+            this.pictureBox1.Location = new System.Drawing.Point(55, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(542, 168);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -237,7 +237,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Pembelanjaan.Properties.Resources.white_lights_backgroundfree_christmas_light_background_from_depositphotoscom_10steps_xybsnuqs;
-            this.ClientSize = new System.Drawing.Size(800, 694);
+            this.ClientSize = new System.Drawing.Size(703, 720);
             this.Controls.Add(this.btnbatal);
             this.Controls.Add(this.btnsimpan);
             this.Controls.Add(this.label7);
