@@ -26,6 +26,7 @@ namespace Pembelanjaan
                 QueryData(new Barang { Kode = "", Nama = "", Harga = 0.0M, Pajak = "" });
             }
             QueryData();
+            this.Hide();
         }
 
         private void btnedit_Click(object sender, EventArgs e)
@@ -35,7 +36,7 @@ namespace Pembelanjaan
                 FrmEdit form = new FrmEdit(this.dataGridView1.SelectedRows[0].Cells[0].Value.ToString().Trim());
                 if (form.Run(form))
                 {
-                    QueryData(new Barang { Kode = "", Nama = "", Harga = 0.0M, Pajak = ""});
+                    QueryData(new Barang { Kode = "", Nama = "", Harga = 0.0M, Pajak = "" });
                 }
             }
         }

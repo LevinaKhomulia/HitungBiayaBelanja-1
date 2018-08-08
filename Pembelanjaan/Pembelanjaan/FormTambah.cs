@@ -63,6 +63,8 @@ namespace Pembelanjaan
                             }) > 0;
                     }
                     this.Close();
+                    FormMainMenu main = new FormMainMenu();
+                    main.Show();
 
                 }
                 catch (Exception ex)
