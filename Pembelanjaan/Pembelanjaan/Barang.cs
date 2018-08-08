@@ -11,6 +11,7 @@ namespace Pembelanjaan
         public string Kode { get; set; }
         public string Nama { get; set; }
         public decimal Harga { get; set; }
+        public int Quantity { get; set; }     
         public string Pajak { get; set; }
     }
 }

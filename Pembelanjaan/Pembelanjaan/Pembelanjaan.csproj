@@ -47,6 +47,17 @@
   <ItemGroup>
     <Compile Include="Barang.cs" />
     <Compile Include="BarangDAO.cs" />
+<<<<<<< HEAD
+    <Compile Include="BarangDAOList.cs" />
+=======
+    <Compile Include="Belanja.cs" />
+    <Compile Include="FormEditBarang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditBarang.Designer.cs">
+      <DependentUpon>FormEditBarang.cs</DependentUpon>
+    </Compile>
+>>>>>>> 2a9a7c2e189b5630cdc2f39ea8039326062a7940
     <Compile Include="FormHitung.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,16 +76,16 @@
     <Compile Include="FormTambah.Designer.cs">
       <DependentUpon>FormTambah.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormEdit.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmEdit.Designer.cs">
-      <DependentUpon>FormEdit.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Setting.cs" />
+<<<<<<< HEAD
     <EmbeddedResource Include="FormEdit.resx">
       <DependentUpon>FormEdit.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="FormEditBarang.resx">
+      <DependentUpon>FormEditBarang.cs</DependentUpon>
+>>>>>>> 2a9a7c2e189b5630cdc2f39ea8039326062a7940
     </EmbeddedResource>
     <EmbeddedResource Include="FormHitung.resx">
       <DependentUpon>FormHitung.cs</DependentUpon>
@@ -84,9 +95,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormTambah.resx">
       <DependentUpon>FormTambah.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmEdit.resx">
-      <DependentUpon>FormEdit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
