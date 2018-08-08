@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 D:\#UPH Medan\Semester 3\HitungBiayaBelanja-1\Pembelanjaan\Pembelanjaan\bin\Debug\Pembelanjaan.exe.config
 D:\#UPH Medan\Semester 3\HitungBiayaBelanja-1\Pembelanjaan\Pembelanjaan\bin\Debug\Pembelanjaan.exe
 D:\#UPH Medan\Semester 3\HitungBiayaBelanja-1\Pembelanjaan\Pembelanjaan\bin\Debug\Pembelanjaan.pdb
@@ -11,3 +12,18 @@ D:\#UPH Medan\Semester 3\HitungBiayaBelanja-1\Pembelanjaan\Pembelanjaan\obj\Debu
 D:\#UPH Medan\Semester 3\HitungBiayaBelanja-1\Pembelanjaan\Pembelanjaan\obj\Debug\Pembelanjaan.csproj.CoreCompileInputs.cache
 D:\#UPH Medan\Semester 3\HitungBiayaBelanja-1\Pembelanjaan\Pembelanjaan\obj\Debug\Pembelanjaan.exe
 D:\#UPH Medan\Semester 3\HitungBiayaBelanja-1\Pembelanjaan\Pembelanjaan\obj\Debug\Pembelanjaan.pdb
+=======
+D:\UPHMedan\Term 3\Team Colab\Final Project\HitungBiayaBelanja\Pembelanjaan\Pembelanjaan\obj\Debug\Pembelanjaan.csprojAssemblyReference.cache
+D:\UPHMedan\Term 3\Team Colab\Final Project\HitungBiayaBelanja\Pembelanjaan\Pembelanjaan\bin\Debug\Pembelanjaan.exe.config
+D:\UPHMedan\Term 3\Team Colab\Final Project\HitungBiayaBelanja\Pembelanjaan\Pembelanjaan\bin\Debug\Pembelanjaan.exe
+D:\UPHMedan\Term 3\Team Colab\Final Project\HitungBiayaBelanja\Pembelanjaan\Pembelanjaan\bin\Debug\Pembelanjaan.pdb
+D:\UPHMedan\Term 3\Team Colab\Final Project\HitungBiayaBelanja\Pembelanjaan\Pembelanjaan\obj\Debug\Pembelanjaan.FormHitung.resources
+D:\UPHMedan\Term 3\Team Colab\Final Project\HitungBiayaBelanja\Pembelanjaan\Pembelanjaan\obj\Debug\Pembelanjaan.FormMainMenu.resources
+D:\UPHMedan\Term 3\Team Colab\Final Project\HitungBiayaBelanja\Pembelanjaan\Pembelanjaan\obj\Debug\Pembelanjaan.FormTambah.resources
+D:\UPHMedan\Term 3\Team Colab\Final Project\HitungBiayaBelanja\Pembelanjaan\Pembelanjaan\obj\Debug\Pembelanjaan.Properties.Resources.resources
+D:\UPHMedan\Term 3\Team Colab\Final Project\HitungBiayaBelanja\Pembelanjaan\Pembelanjaan\obj\Debug\Pembelanjaan.csproj.GenerateResource.cache
+D:\UPHMedan\Term 3\Team Colab\Final Project\HitungBiayaBelanja\Pembelanjaan\Pembelanjaan\obj\Debug\Pembelanjaan.csproj.CoreCompileInputs.cache
+D:\UPHMedan\Term 3\Team Colab\Final Project\HitungBiayaBelanja\Pembelanjaan\Pembelanjaan\obj\Debug\Pembelanjaan.exe
+D:\UPHMedan\Term 3\Team Colab\Final Project\HitungBiayaBelanja\Pembelanjaan\Pembelanjaan\obj\Debug\Pembelanjaan.pdb
+D:\UPHMedan\Term 3\Team Colab\Final Project\HitungBiayaBelanja\Pembelanjaan\Pembelanjaan\obj\Debug\Pembelanjaan.FormEditBarang.resources
+>>>>>>> 2a9a7c2e189b5630cdc2f39ea8039326062a7940

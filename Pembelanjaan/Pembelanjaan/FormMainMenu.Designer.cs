@@ -29,6 +29,14 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+<<<<<<< HEAD
+=======
+            this.Kode = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nama = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Harga = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Pajak = new System.Windows.Forms.DataGridViewTextBoxColumn();
+>>>>>>> 2a9a7c2e189b5630cdc2f39ea8039326062a7940
             this.btnhitung = new System.Windows.Forms.Button();
             this.btnhapus = new System.Windows.Forms.Button();
             this.btnedit = new System.Windows.Forms.Button();
@@ -37,10 +45,14 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+<<<<<<< HEAD
             this.Kode = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nama = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Harga = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Pajak = new System.Windows.Forms.DataGridViewTextBoxColumn();
+=======
+            this.btnRefresh = new System.Windows.Forms.Button();
+>>>>>>> 2a9a7c2e189b5630cdc2f39ea8039326062a7940
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -53,15 +65,50 @@
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Kode,
             this.Nama,
+<<<<<<< HEAD
+=======
+            this.Quantity,
+>>>>>>> 2a9a7c2e189b5630cdc2f39ea8039326062a7940
             this.Harga,
             this.Pajak});
-            this.dataGridView1.Location = new System.Drawing.Point(79, 349);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 349);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowTemplate.Height = 24;
+<<<<<<< HEAD
             this.dataGridView1.Size = new System.Drawing.Size(664, 362);
             this.dataGridView1.TabIndex = 71;
             // 
+=======
+            this.dataGridView1.Size = new System.Drawing.Size(678, 362);
+            this.dataGridView1.TabIndex = 71;
+            // 
+            // Kode
+            // 
+            this.Kode.HeaderText = "Kode";
+            this.Kode.Name = "Kode";
+            // 
+            // Nama
+            // 
+            this.Nama.HeaderText = "Nama Barang";
+            this.Nama.Name = "Nama";
+            // 
+            // Quantity
+            // 
+            this.Quantity.HeaderText = "Quantity";
+            this.Quantity.Name = "Quantity";
+            // 
+            // Harga
+            // 
+            this.Harga.HeaderText = "Harga";
+            this.Harga.Name = "Harga";
+            // 
+            // Pajak
+            // 
+            this.Pajak.HeaderText = "Pajak";
+            this.Pajak.Name = "Pajak";
+            // 
+>>>>>>> 2a9a7c2e189b5630cdc2f39ea8039326062a7940
             // btnhitung
             // 
             this.btnhitung.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -69,10 +116,11 @@
             this.btnhitung.ForeColor = System.Drawing.SystemColors.Control;
             this.btnhitung.Location = new System.Drawing.Point(524, 237);
             this.btnhitung.Name = "btnhitung";
-            this.btnhitung.Size = new System.Drawing.Size(97, 48);
+            this.btnhitung.Size = new System.Drawing.Size(102, 48);
             this.btnhitung.TabIndex = 70;
             this.btnhitung.Text = "Hitung ";
             this.btnhitung.UseVisualStyleBackColor = false;
+            this.btnhitung.Click += new System.EventHandler(this.btnhitung_Click);
             // 
             // btnhapus
             // 
@@ -81,10 +129,11 @@
             this.btnhapus.ForeColor = System.Drawing.SystemColors.Control;
             this.btnhapus.Location = new System.Drawing.Point(373, 237);
             this.btnhapus.Name = "btnhapus";
-            this.btnhapus.Size = new System.Drawing.Size(99, 48);
+            this.btnhapus.Size = new System.Drawing.Size(103, 48);
             this.btnhapus.TabIndex = 69;
             this.btnhapus.Text = "Hapus";
             this.btnhapus.UseVisualStyleBackColor = false;
+            this.btnhapus.Click += new System.EventHandler(this.btnhapus_Click);
             // 
             // btnedit
             // 
@@ -97,6 +146,7 @@
             this.btnedit.TabIndex = 68;
             this.btnedit.Text = "Edit";
             this.btnedit.UseVisualStyleBackColor = false;
+            this.btnedit.Click += new System.EventHandler(this.btnedit_Click);
             // 
             // btntambah
             // 
@@ -158,6 +208,7 @@
             this.pictureBox1.TabIndex = 65;
             this.pictureBox1.TabStop = false;
             // 
+<<<<<<< HEAD
             // Kode
             // 
             this.Kode.HeaderText = "Kode";
@@ -181,13 +232,32 @@
             this.Pajak.HeaderText = "Pajak (%)";
             this.Pajak.Name = "Pajak";
             this.Pajak.ReadOnly = true;
+=======
+            // btnRefresh
+            // 
+            this.btnRefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnRefresh.Font = new System.Drawing.Font("Maiandra GD", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRefresh.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnRefresh.Location = new System.Drawing.Point(546, 308);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(144, 35);
+            this.btnRefresh.TabIndex = 74;
+            this.btnRefresh.Text = "Refresh";
+            this.btnRefresh.UseVisualStyleBackColor = false;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+>>>>>>> 2a9a7c2e189b5630cdc2f39ea8039326062a7940
             // 
             // FormMainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Pembelanjaan.Properties.Resources.white_lights_backgroundfree_christmas_light_background_from_depositphotoscom_10steps_xybsnuqs;
+<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(786, 744);
+=======
+            this.ClientSize = new System.Drawing.Size(702, 744);
+            this.Controls.Add(this.btnRefresh);
+>>>>>>> 2a9a7c2e189b5630cdc2f39ea8039326062a7940
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnhitung);
             this.Controls.Add(this.btnhapus);
@@ -201,7 +271,11 @@
             this.Location = new System.Drawing.Point(79, 12);
             this.Name = "FormMainMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+<<<<<<< HEAD
             this.Text = "Form Main Menu";
+=======
+            this.Text = "FormMainMenu";
+>>>>>>> 2a9a7c2e189b5630cdc2f39ea8039326062a7940
             this.Load += new System.EventHandler(this.FormMainMenu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -223,7 +297,14 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Kode;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nama;
+<<<<<<< HEAD
         private System.Windows.Forms.DataGridViewTextBoxColumn Harga;
         private System.Windows.Forms.DataGridViewTextBoxColumn Pajak;
+=======
+        private System.Windows.Forms.DataGridViewTextBoxColumn Quantity;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Harga;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Pajak;
+        private System.Windows.Forms.Button btnRefresh;
+>>>>>>> 2a9a7c2e189b5630cdc2f39ea8039326062a7940
     }
 }

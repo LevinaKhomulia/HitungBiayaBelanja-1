@@ -28,21 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtTotal = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Kode = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nama = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Jumlah = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Harga = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Pajak = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SubTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewHitung = new System.Windows.Forms.DataGridView();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnminus = new System.Windows.Forms.Button();
             this.btnplus = new System.Windows.Forms.Button();
             this.btnkembali = new System.Windows.Forms.Button();
-            this.btnbayar = new System.Windows.Forms.Button();
+            this.btnSubmit = new System.Windows.Forms.Button();
             this.txtjumlah = new System.Windows.Forms.TextBox();
             this.txtnama = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -51,19 +45,20 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.btnGenerate = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHitung)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtTotal
             // 
-            this.textBox1.Location = new System.Drawing.Point(526, 717);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(200, 35);
-            this.textBox1.TabIndex = 105;
+            this.txtTotal.Location = new System.Drawing.Point(526, 717);
+            this.txtTotal.Multiline = true;
+            this.txtTotal.Name = "txtTotal";
+            this.txtTotal.ReadOnly = true;
+            this.txtTotal.Size = new System.Drawing.Size(200, 35);
+            this.txtTotal.TabIndex = 105;
             // 
             // label5
             // 
@@ -77,51 +72,15 @@
             this.label5.TabIndex = 104;
             this.label5.Text = "TOTAL :";
             // 
-            // dataGridView1
+            // dataGridViewHitung
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Kode,
-            this.Nama,
-            this.Jumlah,
-            this.Harga,
-            this.Pajak,
-            this.SubTotal});
-            this.dataGridView1.Location = new System.Drawing.Point(93, 433);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(633, 271);
-            this.dataGridView1.TabIndex = 103;
-            // 
-            // Kode
-            // 
-            this.Kode.HeaderText = "Kode";
-            this.Kode.Name = "Kode";
-            // 
-            // Nama
-            // 
-            this.Nama.HeaderText = "Nama";
-            this.Nama.Name = "Nama";
-            // 
-            // Jumlah
-            // 
-            this.Jumlah.HeaderText = "Jumlah";
-            this.Jumlah.Name = "Jumlah";
-            // 
-            // Harga
-            // 
-            this.Harga.HeaderText = "Harga";
-            this.Harga.Name = "Harga";
-            // 
-            // Pajak
-            // 
-            this.Pajak.HeaderText = "Pajak";
-            this.Pajak.Name = "Pajak";
-            // 
-            // SubTotal
-            // 
-            this.SubTotal.HeaderText = "Sub Total";
-            this.SubTotal.Name = "SubTotal";
+            this.dataGridViewHitung.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewHitung.Location = new System.Drawing.Point(93, 433);
+            this.dataGridViewHitung.Name = "dataGridViewHitung";
+            this.dataGridViewHitung.RowTemplate.Height = 24;
+            this.dataGridViewHitung.Size = new System.Drawing.Size(633, 271);
+            this.dataGridViewHitung.TabIndex = 103;
+            this.dataGridViewHitung.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // pictureBox2
             // 
@@ -157,6 +116,7 @@
             this.btnminus.TabIndex = 100;
             this.btnminus.Text = "-";
             this.btnminus.UseVisualStyleBackColor = false;
+            this.btnminus.Click += new System.EventHandler(this.btnminus_Click);
             // 
             // btnplus
             // 
@@ -169,6 +129,7 @@
             this.btnplus.TabIndex = 99;
             this.btnplus.Text = "+";
             this.btnplus.UseVisualStyleBackColor = false;
+            this.btnplus.Click += new System.EventHandler(this.btnplus_Click);
             // 
             // btnkembali
             // 
@@ -181,32 +142,37 @@
             this.btnkembali.TabIndex = 98;
             this.btnkembali.Text = "KEMBALI";
             this.btnkembali.UseVisualStyleBackColor = false;
+            this.btnkembali.Click += new System.EventHandler(this.btnkembali_Click);
             // 
-            // btnbayar
+            // btnSubmit
             // 
-            this.btnbayar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnbayar.Font = new System.Drawing.Font("Maiandra GD", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnbayar.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnbayar.Location = new System.Drawing.Point(598, 382);
-            this.btnbayar.Name = "btnbayar";
-            this.btnbayar.Size = new System.Drawing.Size(128, 48);
-            this.btnbayar.TabIndex = 97;
-            this.btnbayar.Text = "BAYAR";
-            this.btnbayar.UseVisualStyleBackColor = false;
+            this.btnSubmit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnSubmit.Font = new System.Drawing.Font("Maiandra GD", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSubmit.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnSubmit.Location = new System.Drawing.Point(598, 382);
+            this.btnSubmit.Name = "btnSubmit";
+            this.btnSubmit.Size = new System.Drawing.Size(128, 48);
+            this.btnSubmit.TabIndex = 97;
+            this.btnSubmit.Text = "SUBMIT";
+            this.btnSubmit.UseVisualStyleBackColor = false;
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
             // txtjumlah
             // 
             this.txtjumlah.Location = new System.Drawing.Point(377, 392);
             this.txtjumlah.Multiline = true;
             this.txtjumlah.Name = "txtjumlah";
+            this.txtjumlah.ReadOnly = true;
             this.txtjumlah.Size = new System.Drawing.Size(49, 35);
             this.txtjumlah.TabIndex = 96;
+            this.txtjumlah.Text = "0";
             // 
             // txtnama
             // 
             this.txtnama.Location = new System.Drawing.Point(331, 341);
             this.txtnama.Multiline = true;
             this.txtnama.Name = "txtnama";
+            this.txtnama.ReadOnly = true;
             this.txtnama.Size = new System.Drawing.Size(290, 35);
             this.txtnama.TabIndex = 95;
             // 
@@ -216,7 +182,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label4.Location = new System.Drawing.Point(99, 395);
+            this.label4.Location = new System.Drawing.Point(87, 387);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(136, 36);
             this.label4.TabIndex = 94;
@@ -228,7 +194,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label3.Location = new System.Drawing.Point(99, 344);
+            this.label3.Location = new System.Drawing.Point(84, 341);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(241, 36);
             this.label3.TabIndex = 93;
@@ -248,7 +214,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label2.Location = new System.Drawing.Point(109, 291);
+            this.label2.Location = new System.Drawing.Point(87, 291);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(98, 36);
             this.label2.TabIndex = 91;
@@ -277,21 +243,35 @@
             this.pictureBox1.TabIndex = 89;
             this.pictureBox1.TabStop = false;
             // 
+            // btnGenerate
+            // 
+            this.btnGenerate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnGenerate.Font = new System.Drawing.Font("Maiandra GD", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGenerate.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnGenerate.Location = new System.Drawing.Point(561, 291);
+            this.btnGenerate.Name = "btnGenerate";
+            this.btnGenerate.Size = new System.Drawing.Size(165, 36);
+            this.btnGenerate.TabIndex = 106;
+            this.btnGenerate.Text = "GENERATE";
+            this.btnGenerate.UseVisualStyleBackColor = false;
+            this.btnGenerate.Click += new System.EventHandler(this.btnGenerate_Click);
+            // 
             // FormHitung
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Pembelanjaan.Properties.Resources.white_lights_backgroundfree_christmas_light_background_from_depositphotoscom_10steps_xybsnuqs;
-            this.ClientSize = new System.Drawing.Size(987, 795);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(829, 795);
+            this.Controls.Add(this.btnGenerate);
+            this.Controls.Add(this.txtTotal);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dataGridViewHitung);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnminus);
             this.Controls.Add(this.btnplus);
             this.Controls.Add(this.btnkembali);
-            this.Controls.Add(this.btnbayar);
+            this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.txtjumlah);
             this.Controls.Add(this.txtnama);
             this.Controls.Add(this.label4);
@@ -301,8 +281,10 @@
             this.Controls.Add(this.label10);
             this.Controls.Add(this.pictureBox1);
             this.Name = "FormHitung";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormHitung";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.FormHitung_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHitung)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -312,21 +294,15 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtTotal;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Kode;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Nama;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Jumlah;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Harga;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Pajak;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SubTotal;
+        private System.Windows.Forms.DataGridView dataGridViewHitung;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnminus;
         private System.Windows.Forms.Button btnplus;
         private System.Windows.Forms.Button btnkembali;
-        private System.Windows.Forms.Button btnbayar;
+        private System.Windows.Forms.Button btnSubmit;
         private System.Windows.Forms.TextBox txtjumlah;
         private System.Windows.Forms.TextBox txtnama;
         private System.Windows.Forms.Label label4;
@@ -335,5 +311,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnGenerate;
     }
 }

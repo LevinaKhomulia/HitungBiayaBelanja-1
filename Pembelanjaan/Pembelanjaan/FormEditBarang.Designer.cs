@@ -1,6 +1,6 @@
 ﻿namespace Pembelanjaan
 {
-    partial class FrmEdit
+    partial class FormEditBarang
     {
         /// <summary>
         /// Required designer variable.
@@ -41,9 +41,9 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -57,9 +57,10 @@
             this.btnbatal.Location = new System.Drawing.Point(372, 651);
             this.btnbatal.Name = "btnbatal";
             this.btnbatal.Size = new System.Drawing.Size(128, 48);
-            this.btnbatal.TabIndex = 102;
+            this.btnbatal.TabIndex = 119;
             this.btnbatal.Text = "BATAL";
             this.btnbatal.UseVisualStyleBackColor = false;
+            this.btnbatal.Click += new System.EventHandler(this.btnbatal_Click);
             // 
             // btnsimpan
             // 
@@ -69,9 +70,10 @@
             this.btnsimpan.Location = new System.Drawing.Point(147, 651);
             this.btnsimpan.Name = "btnsimpan";
             this.btnsimpan.Size = new System.Drawing.Size(128, 48);
-            this.btnsimpan.TabIndex = 101;
+            this.btnsimpan.TabIndex = 118;
             this.btnsimpan.Text = "SIMPAN";
             this.btnsimpan.UseVisualStyleBackColor = false;
+            this.btnsimpan.Click += new System.EventHandler(this.btnsimpan_Click);
             // 
             // label7
             // 
@@ -82,7 +84,7 @@
             this.label7.Location = new System.Drawing.Point(380, 561);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(42, 36);
-            this.label7.TabIndex = 100;
+            this.label7.TabIndex = 117;
             this.label7.Text = "%";
             // 
             // txtpajak
@@ -91,7 +93,7 @@
             this.txtpajak.Multiline = true;
             this.txtpajak.Name = "txtpajak";
             this.txtpajak.Size = new System.Drawing.Size(75, 35);
-            this.txtpajak.TabIndex = 99;
+            this.txtpajak.TabIndex = 116;
             // 
             // txtharga
             // 
@@ -99,7 +101,7 @@
             this.txtharga.Multiline = true;
             this.txtharga.Name = "txtharga";
             this.txtharga.Size = new System.Drawing.Size(188, 35);
-            this.txtharga.TabIndex = 98;
+            this.txtharga.TabIndex = 115;
             // 
             // txtjumlah
             // 
@@ -107,7 +109,7 @@
             this.txtjumlah.Multiline = true;
             this.txtjumlah.Name = "txtjumlah";
             this.txtjumlah.Size = new System.Drawing.Size(75, 35);
-            this.txtjumlah.TabIndex = 97;
+            this.txtjumlah.TabIndex = 114;
             // 
             // txtnama
             // 
@@ -115,7 +117,7 @@
             this.txtnama.Multiline = true;
             this.txtnama.Name = "txtnama";
             this.txtnama.Size = new System.Drawing.Size(290, 35);
-            this.txtnama.TabIndex = 96;
+            this.txtnama.TabIndex = 113;
             // 
             // txtkode
             // 
@@ -124,7 +126,7 @@
             this.txtkode.Name = "txtkode";
             this.txtkode.ReadOnly = true;
             this.txtkode.Size = new System.Drawing.Size(212, 35);
-            this.txtkode.TabIndex = 95;
+            this.txtkode.TabIndex = 112;
             // 
             // label6
             // 
@@ -135,7 +137,7 @@
             this.label6.Location = new System.Drawing.Point(49, 561);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(112, 36);
-            this.label6.TabIndex = 94;
+            this.label6.TabIndex = 111;
             this.label6.Text = "PAJAK";
             // 
             // label5
@@ -147,7 +149,7 @@
             this.label5.Location = new System.Drawing.Point(49, 500);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(123, 36);
-            this.label5.TabIndex = 93;
+            this.label5.TabIndex = 110;
             this.label5.Text = "HARGA";
             // 
             // label4
@@ -159,7 +161,7 @@
             this.label4.Location = new System.Drawing.Point(49, 436);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(136, 36);
-            this.label4.TabIndex = 92;
+            this.label4.TabIndex = 109;
             this.label4.Text = "JUMLAH";
             // 
             // label3
@@ -171,7 +173,7 @@
             this.label3.Location = new System.Drawing.Point(49, 372);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(241, 36);
-            this.label3.TabIndex = 91;
+            this.label3.TabIndex = 108;
             this.label3.Text = "NAMA BARANG";
             // 
             // label2
@@ -183,19 +185,8 @@
             this.label2.Location = new System.Drawing.Point(49, 313);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(98, 36);
-            this.label2.TabIndex = 90;
+            this.label2.TabIndex = 107;
             this.label2.Text = "KODE";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = global::Pembelanjaan.Properties.Resources.smiley_PNG189;
-            this.pictureBox2.Location = new System.Drawing.Point(561, 208);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(71, 48);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 89;
-            this.pictureBox2.TabStop = false;
             // 
             // label1
             // 
@@ -203,10 +194,10 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Forte", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label1.Location = new System.Drawing.Point(29, 224);
+            this.label1.Location = new System.Drawing.Point(71, 224);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(526, 32);
-            this.label1.TabIndex = 88;
+            this.label1.TabIndex = 105;
             this.label1.Text = "Silahkan Edit Data Barang Anda Disini";
             // 
             // label10
@@ -218,8 +209,19 @@
             this.label10.Location = new System.Drawing.Point(214, 140);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(341, 23);
-            this.label10.TabIndex = 87;
+            this.label10.TabIndex = 104;
             this.label10.Text = "Harga Murah , Untung Banyak";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = global::Pembelanjaan.Properties.Resources.smiley_PNG189;
+            this.pictureBox2.Location = new System.Drawing.Point(620, 224);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(71, 48);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 106;
+            this.pictureBox2.TabStop = false;
             // 
             // pictureBox1
             // 
@@ -229,14 +231,13 @@
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(542, 168);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 86;
+            this.pictureBox1.TabIndex = 103;
             this.pictureBox1.TabStop = false;
             // 
-            // FrmEdit
+            // FormEditBarang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Pembelanjaan.Properties.Resources.white_lights_backgroundfree_christmas_light_background_from_depositphotoscom_10steps_xybsnuqs;
             this.ClientSize = new System.Drawing.Size(703, 720);
             this.Controls.Add(this.btnbatal);
             this.Controls.Add(this.btnsimpan);
@@ -255,8 +256,10 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.pictureBox1);
-            this.Name = "FrmEdit";
-            this.Text = "FrmEdit";
+            this.Name = "FormEditBarang";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "FormEditBarang";
+            this.Load += new System.EventHandler(this.FormEditBarang_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

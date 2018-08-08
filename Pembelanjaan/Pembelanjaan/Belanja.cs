@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace Pembelanjaan
 {
-    public class Barang
+    public class Belanja
     {
-        public string Kode { get; set; }
+        public string No { get; set; }
         public string Nama { get; set; }
+        public int Quantity { get; set; }
         public decimal Harga { get; set; }
-        public int Quantity { get; set; }     
         public string Pajak { get; set; }
+        public decimal SubTotal { get; set; }
     }
 }

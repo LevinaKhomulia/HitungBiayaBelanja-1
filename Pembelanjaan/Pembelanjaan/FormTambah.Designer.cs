@@ -200,7 +200,7 @@
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.pictureBox2.Image = global::Pembelanjaan.Properties.Resources.smiley_PNG189;
-            this.pictureBox2.Location = new System.Drawing.Point(568, 202);
+            this.pictureBox2.Location = new System.Drawing.Point(605, 218);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(71, 48);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
