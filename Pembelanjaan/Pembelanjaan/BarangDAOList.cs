@@ -12,7 +12,26 @@ namespace Pembelanjaan
     {
         public List<Barang> listData = new List<Barang>();
         Barang barang = new Barang();
-        public void TambahData(Barang barang)
+
+        public bool TambahData(Barang barang)
+        {
+            bool result = false;
+            try
+            {
+                if (!ItemIsExist(barang))
+                {
+                    listData.Add(barang);
+                    result = true;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return result;
+        }
+
+        public void TambahDat(Barang barang)
         {
             if (barang.Harga <= 0 || Convert.ToInt32(barang.Pajak) < 0)
             {
@@ -73,7 +92,6 @@ namespace Pembelanjaan
                                 break;
                             }
                         }
-
                     }
                 }
             }
@@ -99,52 +117,3 @@ namespace Pembelanjaan
 
     }
 }
-
-
-
-
-        public bool Update(Barang lama, Barang baru)
-        {
-            try
-            {
-                int a = Convert.ToInt32(baru.HargaBarang);
-                int b = Convert.ToInt32(baru.PajakBarang);
-            }
-            catch (Exception)
-            {
-                throw new ArgumentException();
-            }
-            bool result = false;
-            if (Convert.ToInt32(baru.HargaBarang) > 0 && Convert.ToInt32(baru.PajakBarang) >= 0)
-            {
-                try
-                {
-                    if (ItemIsExist(lama))
-                    {
-                        for (int i = 0; i < ListBarang.Count; i++)
-                        {
-                            Barang item = ListBarang[i];
-                            if (item.KodeBarang.ToLower().Trim().Equals(lama.KodeBarang.ToLower().Trim()))
-                            {
-                                ListBarang[i] = baru;
-                                result = true;
-                                break;
-                            }
-                        }
-                    }
-                }
-                catch (Exception ex)
-                {
-                    throw ex;
-                }
-            }
-            else
-            {
-                throw new ArgumentException();
-            }
-            return result;
-        }
-        
-
-
-    
